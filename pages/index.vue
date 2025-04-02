@@ -4,7 +4,7 @@
   // Функция для прибавления 1 часа
   const addOneHour = () => {
     const date = new Date();
-    date.setHours(date.getHours() + 0); // Прибавляем 1 час
+    date.setHours(date.getHours() + 0);
     return date.toLocaleTimeString();
   };
 
@@ -21,20 +21,25 @@
 <template>
   <div class="">
     <div class="fixed bottom-0 w-full">
-      <div class="flex justify-between items-center">
-        
-        <div class="px-12 flex items-center justify-center py-6">
-          <p class="text-white text-2xl">tehnosvar.ru </p>
+
+      <div class="container mx-auto py-6">
+
+        <div class="flex justify-between items-center">
+          
+          <div class="flex items-center justify-center py-6">
+            <p class="text-white text-2xl">tehnosvar.ru </p>
+          </div>
+
+          <div class="">
+            <div class="flex w-56 justify-start py-6">
+              <p class="text-white text-5xl">{{ currentTime }}</p>
+            </div>
+          </div>
+          
         </div>
 
-        <div class="px-4">
-          <div class="flex w-56 justify-start py-6 px-4">
-            <p class="text-white text-5xl">{{ currentTime }}</p>
-          </div>
-        </div>
-        
-        
       </div>
+
     </div>
   </div>
 </template>
