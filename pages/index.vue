@@ -4,7 +4,7 @@
   // Функция для прибавления 1 часа
   const addOneHour = () => {
     const date = new Date();
-    date.setHours(date.getHours() + 1); // Прибавляем 1 час
+    date.setHours(date.getHours() + 0); // Прибавляем 1 час
     return date.toLocaleTimeString();
   };
 
